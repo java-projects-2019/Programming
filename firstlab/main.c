@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    float z1;
-    char c;
-    scanf("%f %c", &z1,&c);
-    printf("%f %c", z1, c);
+    int z1,z2;
+    int a=20,b=30;
+    int c,m;
+    scanf("%d %d", &c, &m);
+    z1 = (c>=a && c<=b ? 1 : 0);
+    printf("%c %d", z1 ? 'Y':'N',(m>>17) %2 );
+
     return 0;
 }
