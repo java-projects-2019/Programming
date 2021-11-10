@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//четвертая лаба
 int main() {
     int z1,z2;
     int a=20,b=30;

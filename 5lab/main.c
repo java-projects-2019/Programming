@@ -21,18 +21,17 @@ int main() {
         }
     }
     int res[2][2];
-    for(int i = 0; i < 2; i++)
-        for(int j = 0; j < 2; j++)
-        {
+    for(int i=0; i<2; i++) {
+        for(int j=0; j<2; j++) {
             res[i][j] = 0;
-            for(int k = 0; k < 2; k++)
+            for(int k=0; k<2; k++) {
                 res[i][j] += b[i][k] * c[k][j];
+            }
         }
-    for (int i=0; i<9; i++) {
-        if(i<8)
-            printf("%d, ", res[i]);
-        else
-            printf("%d",res[i]);
+    }
+    for(int i=0; i<2; i++) {
+        printf("%d %d \n", res[i][0], res[i][1]);
+
     }
 
     return 0;
